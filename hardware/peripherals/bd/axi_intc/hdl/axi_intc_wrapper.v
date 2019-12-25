@@ -1,24 +1,8 @@
-// SPDX-License-Identifier: Apache-2.0
-// Design Copyright 2019 Western Digital Corporation or its affiliates.
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-// http://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-//Date        : Mon Feb 18 19:43:16 2019
-//Host        : arup running 64-bit Ubuntu 16.04.5 LTS
+//Date        : Wed Dec 25 02:14:11 2019
+//Host        : mudita running 64-bit Ubuntu 16.04.6 LTS
 //Command     : generate_target axi_intc_wrapper.bd
 //Design      : axi_intc_wrapper
 //Purpose     : IP block netlist
@@ -28,6 +12,84 @@
 module axi_intc_wrapper
    (ACLK_0,
     ARESETN_0,
+    CPU_EXT_0_araddr,
+    CPU_EXT_0_arburst,
+    CPU_EXT_0_arcache,
+    CPU_EXT_0_arid,
+    CPU_EXT_0_arlen,
+    CPU_EXT_0_arlock,
+    CPU_EXT_0_arprot,
+    CPU_EXT_0_arqos,
+    CPU_EXT_0_arready,
+    CPU_EXT_0_arregion,
+    CPU_EXT_0_arsize,
+    CPU_EXT_0_arvalid,
+    CPU_EXT_0_awaddr,
+    CPU_EXT_0_awburst,
+    CPU_EXT_0_awcache,
+    CPU_EXT_0_awid,
+    CPU_EXT_0_awlen,
+    CPU_EXT_0_awlock,
+    CPU_EXT_0_awprot,
+    CPU_EXT_0_awqos,
+    CPU_EXT_0_awready,
+    CPU_EXT_0_awregion,
+    CPU_EXT_0_awsize,
+    CPU_EXT_0_awvalid,
+    CPU_EXT_0_bid,
+    CPU_EXT_0_bready,
+    CPU_EXT_0_bresp,
+    CPU_EXT_0_bvalid,
+    CPU_EXT_0_rdata,
+    CPU_EXT_0_rid,
+    CPU_EXT_0_rlast,
+    CPU_EXT_0_rready,
+    CPU_EXT_0_rresp,
+    CPU_EXT_0_rvalid,
+    CPU_EXT_0_wdata,
+    CPU_EXT_0_wlast,
+    CPU_EXT_0_wready,
+    CPU_EXT_0_wstrb,
+    CPU_EXT_0_wvalid,
+    NVDLA_0_araddr,
+    NVDLA_0_arburst,
+    NVDLA_0_arcache,
+    NVDLA_0_arid,
+    NVDLA_0_arlen,
+    NVDLA_0_arlock,
+    NVDLA_0_arprot,
+    NVDLA_0_arqos,
+    NVDLA_0_arready,
+    NVDLA_0_arregion,
+    NVDLA_0_arsize,
+    NVDLA_0_arvalid,
+    NVDLA_0_awaddr,
+    NVDLA_0_awburst,
+    NVDLA_0_awcache,
+    NVDLA_0_awid,
+    NVDLA_0_awlen,
+    NVDLA_0_awlock,
+    NVDLA_0_awprot,
+    NVDLA_0_awqos,
+    NVDLA_0_awready,
+    NVDLA_0_awregion,
+    NVDLA_0_awsize,
+    NVDLA_0_awvalid,
+    NVDLA_0_bid,
+    NVDLA_0_bready,
+    NVDLA_0_bresp,
+    NVDLA_0_bvalid,
+    NVDLA_0_rdata,
+    NVDLA_0_rid,
+    NVDLA_0_rlast,
+    NVDLA_0_rready,
+    NVDLA_0_rresp,
+    NVDLA_0_rvalid,
+    NVDLA_0_wdata,
+    NVDLA_0_wlast,
+    NVDLA_0_wready,
+    NVDLA_0_wstrb,
+    NVDLA_0_wvalid,
     S00_ACLK_0,
     S00_ARESETN_0,
     S00_AXI_0_araddr,
@@ -151,6 +213,84 @@ module axi_intc_wrapper
     UART_0_txd);
   input ACLK_0;
   input ARESETN_0;
+  output [63:0]CPU_EXT_0_araddr;
+  output [1:0]CPU_EXT_0_arburst;
+  output [3:0]CPU_EXT_0_arcache;
+  output [4:0]CPU_EXT_0_arid;
+  output [7:0]CPU_EXT_0_arlen;
+  output [0:0]CPU_EXT_0_arlock;
+  output [2:0]CPU_EXT_0_arprot;
+  output [3:0]CPU_EXT_0_arqos;
+  input CPU_EXT_0_arready;
+  output [3:0]CPU_EXT_0_arregion;
+  output [2:0]CPU_EXT_0_arsize;
+  output CPU_EXT_0_arvalid;
+  output [63:0]CPU_EXT_0_awaddr;
+  output [1:0]CPU_EXT_0_awburst;
+  output [3:0]CPU_EXT_0_awcache;
+  output [4:0]CPU_EXT_0_awid;
+  output [7:0]CPU_EXT_0_awlen;
+  output [0:0]CPU_EXT_0_awlock;
+  output [2:0]CPU_EXT_0_awprot;
+  output [3:0]CPU_EXT_0_awqos;
+  input CPU_EXT_0_awready;
+  output [3:0]CPU_EXT_0_awregion;
+  output [2:0]CPU_EXT_0_awsize;
+  output CPU_EXT_0_awvalid;
+  input [4:0]CPU_EXT_0_bid;
+  output CPU_EXT_0_bready;
+  input [1:0]CPU_EXT_0_bresp;
+  input CPU_EXT_0_bvalid;
+  input [63:0]CPU_EXT_0_rdata;
+  input [4:0]CPU_EXT_0_rid;
+  input CPU_EXT_0_rlast;
+  output CPU_EXT_0_rready;
+  input [1:0]CPU_EXT_0_rresp;
+  input CPU_EXT_0_rvalid;
+  output [63:0]CPU_EXT_0_wdata;
+  output CPU_EXT_0_wlast;
+  input CPU_EXT_0_wready;
+  output [7:0]CPU_EXT_0_wstrb;
+  output CPU_EXT_0_wvalid;
+  output [63:0]NVDLA_0_araddr;
+  output [1:0]NVDLA_0_arburst;
+  output [3:0]NVDLA_0_arcache;
+  output [4:0]NVDLA_0_arid;
+  output [7:0]NVDLA_0_arlen;
+  output [0:0]NVDLA_0_arlock;
+  output [2:0]NVDLA_0_arprot;
+  output [3:0]NVDLA_0_arqos;
+  input NVDLA_0_arready;
+  output [3:0]NVDLA_0_arregion;
+  output [2:0]NVDLA_0_arsize;
+  output NVDLA_0_arvalid;
+  output [63:0]NVDLA_0_awaddr;
+  output [1:0]NVDLA_0_awburst;
+  output [3:0]NVDLA_0_awcache;
+  output [4:0]NVDLA_0_awid;
+  output [7:0]NVDLA_0_awlen;
+  output [0:0]NVDLA_0_awlock;
+  output [2:0]NVDLA_0_awprot;
+  output [3:0]NVDLA_0_awqos;
+  input NVDLA_0_awready;
+  output [3:0]NVDLA_0_awregion;
+  output [2:0]NVDLA_0_awsize;
+  output NVDLA_0_awvalid;
+  input [4:0]NVDLA_0_bid;
+  output NVDLA_0_bready;
+  input [1:0]NVDLA_0_bresp;
+  input NVDLA_0_bvalid;
+  input [63:0]NVDLA_0_rdata;
+  input [4:0]NVDLA_0_rid;
+  input NVDLA_0_rlast;
+  output NVDLA_0_rready;
+  input [1:0]NVDLA_0_rresp;
+  input NVDLA_0_rvalid;
+  output [63:0]NVDLA_0_wdata;
+  output NVDLA_0_wlast;
+  input NVDLA_0_wready;
+  output [7:0]NVDLA_0_wstrb;
+  output NVDLA_0_wvalid;
   input S00_ACLK_0;
   input S00_ARESETN_0;
   input [31:0]S00_AXI_0_araddr;
@@ -275,6 +415,84 @@ module axi_intc_wrapper
 
   wire ACLK_0;
   wire ARESETN_0;
+  wire [63:0]CPU_EXT_0_araddr;
+  wire [1:0]CPU_EXT_0_arburst;
+  wire [3:0]CPU_EXT_0_arcache;
+  wire [4:0]CPU_EXT_0_arid;
+  wire [7:0]CPU_EXT_0_arlen;
+  wire [0:0]CPU_EXT_0_arlock;
+  wire [2:0]CPU_EXT_0_arprot;
+  wire [3:0]CPU_EXT_0_arqos;
+  wire CPU_EXT_0_arready;
+  wire [3:0]CPU_EXT_0_arregion;
+  wire [2:0]CPU_EXT_0_arsize;
+  wire CPU_EXT_0_arvalid;
+  wire [63:0]CPU_EXT_0_awaddr;
+  wire [1:0]CPU_EXT_0_awburst;
+  wire [3:0]CPU_EXT_0_awcache;
+  wire [4:0]CPU_EXT_0_awid;
+  wire [7:0]CPU_EXT_0_awlen;
+  wire [0:0]CPU_EXT_0_awlock;
+  wire [2:0]CPU_EXT_0_awprot;
+  wire [3:0]CPU_EXT_0_awqos;
+  wire CPU_EXT_0_awready;
+  wire [3:0]CPU_EXT_0_awregion;
+  wire [2:0]CPU_EXT_0_awsize;
+  wire CPU_EXT_0_awvalid;
+  wire [4:0]CPU_EXT_0_bid;
+  wire CPU_EXT_0_bready;
+  wire [1:0]CPU_EXT_0_bresp;
+  wire CPU_EXT_0_bvalid;
+  wire [63:0]CPU_EXT_0_rdata;
+  wire [4:0]CPU_EXT_0_rid;
+  wire CPU_EXT_0_rlast;
+  wire CPU_EXT_0_rready;
+  wire [1:0]CPU_EXT_0_rresp;
+  wire CPU_EXT_0_rvalid;
+  wire [63:0]CPU_EXT_0_wdata;
+  wire CPU_EXT_0_wlast;
+  wire CPU_EXT_0_wready;
+  wire [7:0]CPU_EXT_0_wstrb;
+  wire CPU_EXT_0_wvalid;
+  wire [63:0]NVDLA_0_araddr;
+  wire [1:0]NVDLA_0_arburst;
+  wire [3:0]NVDLA_0_arcache;
+  wire [4:0]NVDLA_0_arid;
+  wire [7:0]NVDLA_0_arlen;
+  wire [0:0]NVDLA_0_arlock;
+  wire [2:0]NVDLA_0_arprot;
+  wire [3:0]NVDLA_0_arqos;
+  wire NVDLA_0_arready;
+  wire [3:0]NVDLA_0_arregion;
+  wire [2:0]NVDLA_0_arsize;
+  wire NVDLA_0_arvalid;
+  wire [63:0]NVDLA_0_awaddr;
+  wire [1:0]NVDLA_0_awburst;
+  wire [3:0]NVDLA_0_awcache;
+  wire [4:0]NVDLA_0_awid;
+  wire [7:0]NVDLA_0_awlen;
+  wire [0:0]NVDLA_0_awlock;
+  wire [2:0]NVDLA_0_awprot;
+  wire [3:0]NVDLA_0_awqos;
+  wire NVDLA_0_awready;
+  wire [3:0]NVDLA_0_awregion;
+  wire [2:0]NVDLA_0_awsize;
+  wire NVDLA_0_awvalid;
+  wire [4:0]NVDLA_0_bid;
+  wire NVDLA_0_bready;
+  wire [1:0]NVDLA_0_bresp;
+  wire NVDLA_0_bvalid;
+  wire [63:0]NVDLA_0_rdata;
+  wire [4:0]NVDLA_0_rid;
+  wire NVDLA_0_rlast;
+  wire NVDLA_0_rready;
+  wire [1:0]NVDLA_0_rresp;
+  wire NVDLA_0_rvalid;
+  wire [63:0]NVDLA_0_wdata;
+  wire NVDLA_0_wlast;
+  wire NVDLA_0_wready;
+  wire [7:0]NVDLA_0_wstrb;
+  wire NVDLA_0_wvalid;
   wire S00_ACLK_0;
   wire S00_ARESETN_0;
   wire [31:0]S00_AXI_0_araddr;
@@ -400,6 +618,84 @@ module axi_intc_wrapper
   axi_intc axi_intc_i
        (.ACLK_0(ACLK_0),
         .ARESETN_0(ARESETN_0),
+        .CPU_EXT_0_araddr(CPU_EXT_0_araddr),
+        .CPU_EXT_0_arburst(CPU_EXT_0_arburst),
+        .CPU_EXT_0_arcache(CPU_EXT_0_arcache),
+        .CPU_EXT_0_arid(CPU_EXT_0_arid),
+        .CPU_EXT_0_arlen(CPU_EXT_0_arlen),
+        .CPU_EXT_0_arlock(CPU_EXT_0_arlock),
+        .CPU_EXT_0_arprot(CPU_EXT_0_arprot),
+        .CPU_EXT_0_arqos(CPU_EXT_0_arqos),
+        .CPU_EXT_0_arready(CPU_EXT_0_arready),
+        .CPU_EXT_0_arregion(CPU_EXT_0_arregion),
+        .CPU_EXT_0_arsize(CPU_EXT_0_arsize),
+        .CPU_EXT_0_arvalid(CPU_EXT_0_arvalid),
+        .CPU_EXT_0_awaddr(CPU_EXT_0_awaddr),
+        .CPU_EXT_0_awburst(CPU_EXT_0_awburst),
+        .CPU_EXT_0_awcache(CPU_EXT_0_awcache),
+        .CPU_EXT_0_awid(CPU_EXT_0_awid),
+        .CPU_EXT_0_awlen(CPU_EXT_0_awlen),
+        .CPU_EXT_0_awlock(CPU_EXT_0_awlock),
+        .CPU_EXT_0_awprot(CPU_EXT_0_awprot),
+        .CPU_EXT_0_awqos(CPU_EXT_0_awqos),
+        .CPU_EXT_0_awready(CPU_EXT_0_awready),
+        .CPU_EXT_0_awregion(CPU_EXT_0_awregion),
+        .CPU_EXT_0_awsize(CPU_EXT_0_awsize),
+        .CPU_EXT_0_awvalid(CPU_EXT_0_awvalid),
+        .CPU_EXT_0_bid(CPU_EXT_0_bid),
+        .CPU_EXT_0_bready(CPU_EXT_0_bready),
+        .CPU_EXT_0_bresp(CPU_EXT_0_bresp),
+        .CPU_EXT_0_bvalid(CPU_EXT_0_bvalid),
+        .CPU_EXT_0_rdata(CPU_EXT_0_rdata),
+        .CPU_EXT_0_rid(CPU_EXT_0_rid),
+        .CPU_EXT_0_rlast(CPU_EXT_0_rlast),
+        .CPU_EXT_0_rready(CPU_EXT_0_rready),
+        .CPU_EXT_0_rresp(CPU_EXT_0_rresp),
+        .CPU_EXT_0_rvalid(CPU_EXT_0_rvalid),
+        .CPU_EXT_0_wdata(CPU_EXT_0_wdata),
+        .CPU_EXT_0_wlast(CPU_EXT_0_wlast),
+        .CPU_EXT_0_wready(CPU_EXT_0_wready),
+        .CPU_EXT_0_wstrb(CPU_EXT_0_wstrb),
+        .CPU_EXT_0_wvalid(CPU_EXT_0_wvalid),
+        .NVDLA_0_araddr(NVDLA_0_araddr),
+        .NVDLA_0_arburst(NVDLA_0_arburst),
+        .NVDLA_0_arcache(NVDLA_0_arcache),
+        .NVDLA_0_arid(NVDLA_0_arid),
+        .NVDLA_0_arlen(NVDLA_0_arlen),
+        .NVDLA_0_arlock(NVDLA_0_arlock),
+        .NVDLA_0_arprot(NVDLA_0_arprot),
+        .NVDLA_0_arqos(NVDLA_0_arqos),
+        .NVDLA_0_arready(NVDLA_0_arready),
+        .NVDLA_0_arregion(NVDLA_0_arregion),
+        .NVDLA_0_arsize(NVDLA_0_arsize),
+        .NVDLA_0_arvalid(NVDLA_0_arvalid),
+        .NVDLA_0_awaddr(NVDLA_0_awaddr),
+        .NVDLA_0_awburst(NVDLA_0_awburst),
+        .NVDLA_0_awcache(NVDLA_0_awcache),
+        .NVDLA_0_awid(NVDLA_0_awid),
+        .NVDLA_0_awlen(NVDLA_0_awlen),
+        .NVDLA_0_awlock(NVDLA_0_awlock),
+        .NVDLA_0_awprot(NVDLA_0_awprot),
+        .NVDLA_0_awqos(NVDLA_0_awqos),
+        .NVDLA_0_awready(NVDLA_0_awready),
+        .NVDLA_0_awregion(NVDLA_0_awregion),
+        .NVDLA_0_awsize(NVDLA_0_awsize),
+        .NVDLA_0_awvalid(NVDLA_0_awvalid),
+        .NVDLA_0_bid(NVDLA_0_bid),
+        .NVDLA_0_bready(NVDLA_0_bready),
+        .NVDLA_0_bresp(NVDLA_0_bresp),
+        .NVDLA_0_bvalid(NVDLA_0_bvalid),
+        .NVDLA_0_rdata(NVDLA_0_rdata),
+        .NVDLA_0_rid(NVDLA_0_rid),
+        .NVDLA_0_rlast(NVDLA_0_rlast),
+        .NVDLA_0_rready(NVDLA_0_rready),
+        .NVDLA_0_rresp(NVDLA_0_rresp),
+        .NVDLA_0_rvalid(NVDLA_0_rvalid),
+        .NVDLA_0_wdata(NVDLA_0_wdata),
+        .NVDLA_0_wlast(NVDLA_0_wlast),
+        .NVDLA_0_wready(NVDLA_0_wready),
+        .NVDLA_0_wstrb(NVDLA_0_wstrb),
+        .NVDLA_0_wvalid(NVDLA_0_wvalid),
         .S00_ACLK_0(S00_ACLK_0),
         .S00_ARESETN_0(S00_ARESETN_0),
         .S00_AXI_0_araddr(S00_AXI_0_araddr),
